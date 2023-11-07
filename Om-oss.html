@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <!-- minimerad CSS, dvs. utan radbrytningar, kommentarer o.dyl. -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Bootstraps egen JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="CSS-for-all.css">
+    <!-- Fonter & Ikoner-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/breilga" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a3efb24e9b.js" crossorigin="anonymous"></script>
+    <!-- Page-Ikon -->
+    <link rel="icon" href="foton/audi.png" type="image/png" />
+
+    <script src="MenuAndFooter.js"></script>
+    <title>Om Oss</title>  
+    <style>
+    section {
+        padding: 60px 0;
+    }
+    </style>
+</head>
+<!-- Måste öppnas med live-server för att kunna visa nav-meny och footer -->
+<body>
+ <!-- Meny (nav) kopplad till JavaScript-->
+ <div id="navbar-container"></div>
+
+    <!--main image & into text-->
+    <section id="intro">
+        <div class="container-lg">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-md-5 text-center text-md-start">
+                    
+                    <div class="display-2">Om Oss</div>
+                    
+                    <p class="lead my-4 text-muted"> 
+                        Audi är ett tyskt bilmärke med huvudkontor i Ingolstadt, Tyskland. Audi är sedan 1965 ett dotterbolag till Volkswagen AG. Audi tillverkar sina fordon i nio produktionsanläggningar världen över. Audi är det latinska ordet för att höra.
+                        Den första bilen under namnet Audi blev Audi Typ A som tillverkades 1910–1912 i 140 exemplar. 1927 kom den första modellen med åtta cylindrar, Audi Imperator.
+                    </p>
+                </div>
+
+                <div class="col-md-5 text-center d-none d-md-block">
+
+                    <!--Tooltip-->
+                    <span class="tt" data-bs-placement="bottom" title="Audi">
+                        <img class="img-fluid" src="foton/firstcar.jpg" alt="Audi first car front" width="600px">
+                    </span>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--pricing plans-->
+    <section id="pricing" class="bg-light mt-5">
+        <div class="container-lg">
+            <div class="text-center">
+                <h2>Framgång i Teknologin</h2>
+                <p class="lead text-muted">Över ett sekel (1910-2023).</p>
+            </div>
+
+            <div class="row my-5 align-items-center justify-content-center g-2">
+                <div class="col-8 col-lg-4 col-xxl-3">
+                    <div class="card">
+                        <div class="card-body text-center py-4">
+                            <h4 class="card-title">Audi Type A Sport-Phaeton.</h4>
+                            <div class="lead card-subtitle">1910.</div>
+                            <p class="card-text mx-5 text-muted d-none d-lg-block">
+                                Audi som vi nu känner till det lanserade sin första bil år 1910. 
+                            </p>
+                            <img class="img-fluid" src="foton/aud_type_a.jpg" alt="Audi first car side" width="300px">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-9 col-lg-4">
+                    <div class="card border-2 border-primary">
+                        <div class="card-header bg-light text-center">Mest sålda Audi</div>
+                        <div class="card-body text-center py-5">
+                            <h4 class="card-title">Audi A5</h4>
+                            <div class="lead card-subtitle">Nyaste modellen 2023</div>
+                            <p class="card-text mx-5 text-muted d-none d-lg-block">
+                                I samtliga kategorier hamnade Audi Q5 över bilägares genomsnittliga bedömning. De tre kategorier med bäst betyg var att 96 procent upplever bilen problemfri, 
+                            </p>
+                            <img class="img-fluid" src="foton/audi_a5.jpg" alt="Audi A5" width="300px">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-8 col-lg-4 col-xxl-3">
+                    <div class="card">
+                        <div class="card-body text-center py-4">
+                            <h4 class="card-title">Audi e-Tron GT</h4>
+                            <div class="lead card-subtitle">Senaste Produktion 2023</div>
+                            <p class="card-text mx-5 text-muted d-none d-lg-block">
+                                Audi är en av de biltillverkare efter Tesla som är snabbast ute med elbilar. För 2,5 år sedan kom den elektriska suv:en e-tron, nu kommer Audi med nästa elbil.
+                            </p>
+                            <img class="img-fluid" src="foton/aud_e_tron_gt.webp" alt="Audi e-Tron GT" width="300px">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--reviews list-->
+    <section id="#reviews">
+        <div class="container-lg-8 bg-light">
+            <div class="text-center mt-6">
+                <h2><i class="bi bi-stars"></i>Recensioner</h2>
+                <p class="lead">Kundernas åsikter</p>
+            </div>
+
+            <div class="row justify-content-center my-5">
+                <div class="col-lg-8">
+                    <div class="list-group text-center mt-3">
+                        <div class="list-group-item py-3 mt-3">
+                            <div class="pb-2">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                            <h5 class="mb-1">Jättetrevlig personal och en fantastisk service.</h5>
+                            <p class="mb-1">
+                                Jättetrevlig personal och en fantastisk service! Man märker verkligen att Audi Sverige bryr sig om sina kunder.
+                            </p>
+                        </div>
+                        <div class="list-group-item py-3 mt-3">
+                            <div class="pb-2">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                            <h5 class="mb-1">Lösningsorienterat och trevligt bemötande</h5>
+                            <p class="mb-1">
+                                Har en ny Etron Q8. Fantastisk bil. Allt har fungerat kanonbra. Teamet på verkstan har varit mycket tillmötesgående och jag är väldigt nöjd. Bra service, lösningsorienterat- och trevligt bemötande.
+                            </p>
+                        </div>
+                        <div class="list-group-item py-3 mt-3">
+                            <div class="pb-2">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-half"></i>
+                            </div>
+                            <h5 class="mb-1">Fantastisk bemötande</h5>
+                            <p class="mb-1">
+                                Har precis hämtat hem min nya Audi A3 som jag beställde i juli. Jag har fått den bästa servicen man kan tänka sig av säljteamet hos er. Teamet på plats har varit otroligt hjälpsamma från början till slut. De har svarat snabbt på alla mina frågor och varit väldigt behjälplig med allt. Ska ni köpa en Audi så gå till denna station.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer kopplad till JavaScript-->
+    <div id="footer-container"></div>
+
+</body>
+</html>
+
+
+
+

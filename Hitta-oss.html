@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap -->
+    <!-- minimerad CSS, dvs. utan radbrytningar, kommentarer o.dyl. -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Bootstraps egen JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="CSS-for-all.css" />
+    <!-- Fonter & Ikoner-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.cdnfonts.com/css/breilga" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/a3efb24e9b.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Page-Ikon -->
+    <link rel="icon" href="foton/audi.png" type="image/png" />
+
+    <script src="MenuAndFooter.js"></script>
+    <title>Hitta-oss</title>
+  </head>
+  <!-- Måste öppnas med live-server för att kunna visa nav-meny och footer -->
+  <body>
+    <!-- Meny (nav) kopplad till JavaScript-->
+    <div id="navbar-container"></div>
+
+    <main>
+      <section>
+        <!--rubrik och våra öppettider  -->
+        <h1 class="öppet-tider">Våra Öppettider</h1>
+
+        <div class="opening">
+          <ul>
+            <li>Måndag-Fredag: 09:00-19:00</li>
+            <li>Lördag: 10:00-17:00</li>
+            <li>Söndag: Stängd</li>
+          </ul>
+        </div>
+        <!-- vår bild  -->
+        <div class="logga"><img src="foton/D-Stage.webp" alt="En mans hand som håller i en mobiltelefon i en bil" /></div>
+      </section>
+      <!-- rubrik och adress -->
+      <section>
+        <h1 class="hitta-oss">Här hittar ni oss</h1>
+        <h4 id="var">Adress:</h4>
+        <p id="p">Audi Center Kista Raseborgsgatan 2 16474, Kista</p>
+        <!-- google maps -->
+        <div class="google-maps">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2533.8100473509053!2d17.919275042120024!3d59.4204269114586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f9f6c072648c1%3A0x9a8bbbddc3df4e88!2sAudi%20Center%20Kista!5e0!3m2!1ssv!2sse!4v1695720122680!5m2!1ssv!2sse"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer kopplad till JavaScript-->
+    <div id="footer-container"></div>
+  </body>
+</html>

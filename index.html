@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <!-- minimerad CSS, dvs. utan radbrytningar, kommentarer o.dyl. -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Bootstraps egen JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="CSS-for-all.css">
+    <!-- Fonter & Ikoner-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/breilga" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a3efb24e9b.js" crossorigin="anonymous"></script>
+    <!-- Page-Ikon -->
+    <link rel="icon" href="foton/audi.png" type="image/png" />
+
+    <script src="MenuAndFooter.js"></script>
+    <title>Hem</title>  
+</head>
+<!-- Måste öppnas med live-server för att kunna visa nav-meny och footer -->
+<body>
+    <!-- Meny (nav) kopplad till JavaScript-->
+    <div id="navbar-container"></div>
+
+    <header>
+       <!-- Bilden som är i header är länkad från css-filen -->
+    </header>
+
+    <main>
+        <div class="box1">
+            <div class="text1">
+                <h2>VÅRT UTBUD</h2>
+                <p id="info">
+                    Välkommen till Audi - där elegans möter innovation.
+                </p>
+                <p>
+                    Med över ett sekel av banbrytande teknik och design, är Audi synonymt med överlägsen körupplevelse.<br>
+                    Utforska vårt imponerande utbud av fordon, från stadssportbilar till lyxiga SUV:er. <br>
+                    Upptäck vår historia, banbrytande teknologi och vårt åtagande för miljövänlig mobilitet.<br>
+                    Oavsett om du är en entusiast eller blivande ägare, välkommen till Audi, <br>
+                    där körning blir konst och framtid möter prestanda.
+                </p>
+            </div>
+            <img src="foton/A210286_overfull.jpg" alt="Audi RS8 svart">
+        </div>
+
+        <section>
+            <div class="text2">
+                <h2>BESTÄLL AV OSS</h2>
+                <p>Bläddra igenom Audi's modellutbud och välj den bil som bäst passar dina behov, preferenser och budget.</p>
+            </div>
+                <!-- id på två av bilderna för att få dem att hovra åt vänster respective höger -->
+                <div class="box2">
+                <img id="bildbil1" src="foton/interior.jpg" alt="Bild på insidan av en bil på ratten från förarsättet">
+                <img src="foton/details.jpg" alt="Bild på automat växlaren">
+                <img id="bildbil3" src="foton/details2.jpg" alt="Bild på insidan av en bil på baksättet från förarsättet">
+            </div>
+            
+            <h2>VÅRA BILAR</h2>
+           
+            <div class="fordon">
+                <ul>
+                    <!-- id på a-tagen för att den ska hittas när man trycker på den till produkt sidan. Sen har varannan bil yttligare ett id men på själva bilden för att få dem att hovra åt vänster, så att de inte hovras utanför sidan-->
+                    <li>
+                        <a href="produkter.html#audiR8">
+                        <img class="Audi1" src="foton/bild5.png" alt="Audi R8 GT">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="produkter.html#Audie-tron">
+                        <img src="foton/bild4.png" alt="Audi e-tron">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="produkter.html#AudiQ7">
+                        <img class="Audi1" src="foton/bild6.png" alt="Audi Q7">
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="produkter.html#AudiQ5S-line">
+                        <img src="foton/bild7.png" alt="Audi Q5 S-line">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="produkter.html#AudiA7">
+                        <img class="Audi1" src="foton/bild8.png" alt="Audi A7">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="produkter.html#AUDIRS6">
+                        <img src="foton/Audi-RS6.png" alt="Audi RS6">
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </section>
+
+        <div class="text3">
+            <p>
+                Audi erbjuder en imponerande mångfald av modeller som omfattar olika segment och behov.
+                Från kompakta och eleganta Audi A3 till lyxiga Audi A8, finns det en modell för varje smak och livsstil. 
+            </p> 
+            <p>
+                För den som föredrar sportiga upplevelser, erbjuder Audi sin ikoniska Audi TT och den kraftfulla 
+                Audi RS-serien. För den växande SUV-marknaden erbjuder Audi populära modeller som Audi Q3, Audi Q5 
+                och Audi Q7, som kombinerar stil med funktion. Audi e-tron-serien sätter standarden för elektrisk 
+                mobilitet med e-tron och e-tron Sportback, medan Audi RS e-tron GT levererar elbilskraft med prestanda.
+                Om du letar efter en kompakt stadsvagn finns Audi A1 och Audi A2, och för den äventyrliga själen erbjuder 
+                Audi A4 Allroad Quattro robusthet och komfort. Oavsett vilka krav du har på din nästa bil, 
+                har Audi en modell som passar dig med avancerad teknik, lyxig komfort och en passion för körning.
+            </p>
+        </div>
+    </main>
+
+    <!-- Footer kopplad till JavaScript-->
+    <div id="footer-container"></div>
+   
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <!-- minimerad CSS, dvs. utan radbrytningar, kommentarer o.dyl. -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Bootstraps egen JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="CSS-for-all.css">
+    <!-- Fonter & Ikoner-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a3efb24e9b.js" crossorigin="anonymous"></script>
+    <!-- Page-Ikon -->
+    <link rel="icon" href="foton/audi.png" type="image/png" />
+    <!-- Valt att göra en egen style här för aatt det är det är unikt för den här sidan  --> 
+    <style> 
+    #navbar-container{
+        background-color: #ffffff;
+    }
+    #färg {
+        background-color: #787878;
+    }
+    #kontakt{
+        background-color: #ffffff;
+    }
+    .ring-skriv-hitta i span{
+        color:#787878 ;
+    }
+    .my-icon {
+        color: #787878;
+    }
+    .my-icon:hover {
+        color:#2c2c2c;
+    }
+    </style>
+
+    <script src="MenuAndFooter.js"></script>
+    <title>Kontakt</title>
+</head>
+<!-- Måste öppnas med live-server för att kunna visa nav-meny och footer -->
+<body id="färg"> 
+    <!-- Meny (nav) kopplad till JavaScript-->
+    <div id="navbar-container"></div>
+
+    <main>
+        <div class="contactform">
+            <!-- skickar iväg forumläret till en mailadress -->
+            <form action="mailto:zinix-@hotmail.com" method="post" enctype="text/plain">
+                <!-- Vi har val att lägga 'required' på det viktigate för att vi som företag ska kunna återkoppla med kunden -->
+                <label for="name">Namn:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="address">Adress:</label>
+                <input type="text" id="address" name="address" required>
+                
+                <label for="phone">Telefonnummer:</label>
+                <input type="tel" id="phone" name="phone" required>
+                
+                <label for="comment">Kommentar:</label>
+                <textarea id="comment" name="comment" rows="4"></textarea>
+                
+                <input type="submit" value="Skicka">
+            </form>
+        </div>    
+        
+        <div id="contactpic">
+            <img src="foton/kontakta.jpg" alt="En kvinnlig hand som håller i en mobiltelefon i en bil">
+        </div>
+    </main>
+    
+    <!-- Footer kopplad till JavaScript-->
+    <div id="footer-container"></div>
+
+</body>
+</html>
