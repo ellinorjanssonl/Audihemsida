@@ -125,7 +125,7 @@ h2 {
 }
 
 .fordon ul {
-	padding-top: 5%;
+	padding-top: 7%;
 	width: 45%;
 	float: left;
 	display: grid;
@@ -136,6 +136,8 @@ h2 {
 }
 
 .fordon li {
+	box-shadow: 2px 4px 2px  #9b9b9b;
+	padding:4%;
 	float: left;
 	width: 100%; /* Fyll ut hela utrymmet i sina respektive kolumner */
 }
@@ -147,8 +149,9 @@ h2 {
 }
 
 .fordon li:hover {
-	transform: scale(1.9);
+	transform: scale(1.6);
 	transition: 0.3s;
+	box-shadow: none;
 }
 
 /* För att bilarna till vänster inte ska hovras utanför sidan */
@@ -170,12 +173,11 @@ h2 {
 }
 
 .text3 p {
-	border: 1px solid #000000;
-	border-bottom-left-radius: 20%;
-	border-top-right-radius: 20%;
-	background: #46464d;
-	padding: 11%;
-	color: #ffffff;
+	background-color: #f4f4f4;
+	font-weight: 500;
+	border: 1px solid #3a3a3a;
+	padding: 10%;
+	color: #151515;
 }
 
 /* ---------- Kontaktsidan ---------- */
@@ -206,14 +208,14 @@ textarea {
 	border: 2px solid #3a3a3a;
 	width: 60%;
 	padding: 10px;
-	background-color: #dedede;
+	background-color: #ffffff;
 }
 
 input[type="submit"] {
 	margin-top: 5%;
-	background-color: #dedede;
+	background-color: #464646;
 	border: 2px solid #3a3a3a;
-	color: rgb(0, 0, 0);
+	color: rgb(255, 255, 255);
 	width: 30%;
 	padding: 10px 20px;
 	cursor: pointer;
@@ -225,8 +227,8 @@ input[type="submit"]:hover {
 }
 
 #contactpic img {
-	box-shadow: #3d3b3b 5px 5px 5px 5px;
-	border: 2px solid #3a3a3a;
+	box-shadow: #646363 2px 2px 2px 2px;
+	border: 1px solid #ffffff;
 	margin-top: 5%;
 	border-radius: 20%;
 	margin-right: 10%;
@@ -234,6 +236,7 @@ input[type="submit"]:hover {
 	max-width: 40%;
 	align-content: flex-start;
 	opacity: 0.9;
+	
 }
 
 /* ---------- Produkter ---------- */
@@ -340,6 +343,8 @@ iframe {
 	width: 100%;
 	height: 20%;
 	padding: 1%;
+	font-family: "Poppins", sans-serif;
+	font-weight: lighter;
 }
 
 #socialt {
@@ -350,26 +355,26 @@ iframe {
 
 .ring-skriv-hitta {
 	padding: 1%;
+	font-family: "Poppins", sans-serif;
 }
 
 /* Span = för att i classen hade en egen font-family */
 .ring-skriv-hitta i span {
-	font-family: "Breilga", sans-serif;
+	font-family: "Poppins", sans-serif;
+	font-weight: lighter;
 }
 
 .button-link {
 	display: inline-block;
-	padding: 2px 2px;
-	border: 1px #c7c7c7 solid;
-	color: #606060;
+	color: #202020;
 	text-decoration: none;
-	font-weight: bold;
 	transition: transform 0.3s;
 }
 
 .button-link:hover {
-	background-color: darkgray;
-	color: #fff;
+	background-color: rgba(173, 173, 173, 0.4);
+	color: #282828;
+	padding: 3px 5px;
 	text-decoration: none;
 	font-size: 1em;
 }
@@ -387,7 +392,7 @@ iframe {
 }
 
 .my-icon {
-	color: #000000;
+	color: #252525;
 	transition: color 0.3s;
 	transition: transform 0.3s;
 }
